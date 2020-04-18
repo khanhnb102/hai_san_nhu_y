@@ -1,0 +1,12 @@
+2020-04-18T11:37:01+00:00 CRITICAL Uncaught phpmailerException: Invalid address:  (setFrom)  in /var/www/haisany/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /var/www/haisany/wp-content/plugins/muahangnhanh/dinhhien_web79.php(152): PHPMailer->setFrom('', 'H\xE1\xBA\xA3i S\xE1\xBA\xA3n T\xC6\xB0...')
+#1 /var/www/haisany/wp-includes/class-wp-hook.php(286): myphpmailer(Object(PHPMailer))
+#2 /var/www/haisany/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/haisany/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#4 /var/www/haisany/wp-includes/pluggable.php(477): do_action_ref_array('phpmailer_init', Array)
+#5 /var/www/haisany/wp-admin/includes/misc.php(1220): wp_mail(Array, '[H\xE1\xBA\xA3i S\xE1\xBA\xA3n T\xC6...', 'Xin ch\xC3\xA0o admin...')
+#6 /var/www/haisany/wp-includes/class-wp-hook.php(286): update_option_new_admin_email('new_admin_email', 'ynhu@gmail.com')
+#7 /var/www/haisany/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /var/www/haisany/wp-includes/plugin.php(453 in /var/www/haisany/wp-includes/class-phpmailer.php on line 1023
+

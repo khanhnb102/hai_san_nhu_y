@@ -1,0 +1,11 @@
+2020-04-15T06:50:48+00:00 CRITICAL Uncaught phpmailerException: Invalid address:  (setFrom)  in /var/www/html/banhang1/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /var/www/html/banhang1/wp-content/plugins/muahangnhanh/dinhhien_web79.php(152): PHPMailer->setFrom('', 'thuc pham cho m...')
+#1 /var/www/html/banhang1/wp-includes/class-wp-hook.php(286): myphpmailer(Object(PHPMailer))
+#2 /var/www/html/banhang1/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/html/banhang1/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#4 /var/www/html/banhang1/wp-includes/pluggable.php(477): do_action_ref_array('phpmailer_init', Array)
+#5 /var/www/html/banhang1/wp-admin/includes/class-wp-automatic-updater.php(760): wp_mail(Array, '[thuc pham cho ...', 'Xin ch\xC3\xA0o! Tran...', Array)
+#6 /var/www/html/banhang1/wp-admin/includes/class-wp-automatic-updater.php(493): WP_Automatic_Updater->send_email('success', Object(stdClass))
+#7 /var/www/html/banhang1/wp-admin/includes/class-wp-automatic-updater.php(463): WP_Automat in /var/www/html/banhang1/wp-includes/class-phpmailer.php on line 1023
+
